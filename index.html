@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="form.css" />
+		<title>Form Of Something</title>
+	</head>
+	<body >
+		<div class="header-div">
+			<h1 class="header-h1">Registration Form</h1>
+			<p class="header-p">Please fill up all the necessary information</p>
+		</div>
+		<div class="main-div">
+			<form class="form" action="thanks.html" method="post">
+				<div class="div-1">
+					<label for="first-name">First Name:</label>
+					<input
+						class="block"
+						type="text"
+						id="first-name"
+						name="first-name"
+						placeholder="Enter your first name"
+						required
+					/>
+
+					<label for="last-name">Last Nmae:</label>
+					<input
+						class="block"
+						type="text"
+						id="last-name"
+						name="last-name"
+						placeholder="Enter your last name"
+						required
+					/>
+
+					<label for="age">Age (optional):</label>
+					<input
+						class="block"
+						type="number"
+						id="age"
+						min="13"
+						max="99"
+						name="age"
+						placeholder="Enter your age (optional)"
+					/>
+
+					<label for="email">E-mail:</label>
+					<input
+						class="block"
+						type="email"
+						id="email"
+						name="age"
+						placeholder="Enter your e-mail"
+						required
+					/>
+
+					<label for="password">Password:</label>
+					<input
+						class="block"
+						type="password"
+						id="password"
+						pattern="[0-9a-z]{8,}"
+						name="password"
+						placeholder="Enter your password"
+						required
+					/>
+				</div>
+				<div class="div-2">
+					<label for="photo">Upload a profile picture:</label>
+					<input class="block" type="file" id="photo" name="profile-pic" required />
+
+					<label for="reffer">Where from you hear about us?</label>
+					<select name="reffer" id="reffer">
+						<option value="0">Chosee One</option>
+						<option value="1">Google</option>
+						<option value="2">TV Show</option>
+						<option value="3">Facebook</option>
+						<option value="4">Youtube</option>
+						<option value="5">Instagram</option>
+					</select>
+
+					<label for="bio">Tell us somthing about yourself:</label>
+					<textarea
+						name="bio"
+						id="bio"
+						placeholder="Hi! I am here to share my experience..."
+						cols="30"
+						rows="3"
+					></textarea>
+
+					<label for="interest">What is your interest?</label>
+					<label for="cs"
+						><input calss="inline" type="checkbox" name="interest" id="cs" />
+						Computer Science</label
+					>
+					<label for="ai"
+						><input calss="inline" type="checkbox" name="interest" id="ai" />
+						Artificeal Inteligence</label
+					>
+					<label for="ml"
+						><input calss="inline" type="checkbox" name="interest" id="ml" />
+						Mechine Learning</label
+					>
+					<label for="gd"
+						><input calss="inline" type="checkbox" name="interest" id="gd" />
+						Graphics Design</label
+					>
+					<label for="wd"
+						><input calss="inline" type="checkbox" name="interest" id="wd" />
+						Web Development</label
+					>
+				</div>
+				<div class="div-3">
+					<label for="personal-a"></label><input calss="inline" type="radio" id="personal-a" name="account" />
+					Personal Account</label>
+
+					<label for="business-a"></label><input calss="inline" type="radio" id="business-a" name="account" />
+					Business Account</label>
+
+					<label for="terms-and-conditions"
+						><input
+							calss="inline"
+							type="checkbox"
+							name="terms-and-conditions"
+							id="terms-and-conditions"
+							required
+						/>
+						I accept all the <a href="">terms-and-conditions</a>.</label
+					>
+
+					<input class="submit" type="submit" name="submit" value="Submit" />
+				</div>
+			</form>
+		</div>
+		<div calss="footer-div">
+			<section></section>
+		</div>
+	</body>
+</html>
